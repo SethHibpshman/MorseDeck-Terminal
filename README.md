@@ -2,7 +2,7 @@
 
 > A standalone Morse code keyer and trainer built on the ESP32-S3, featuring real-time decoding, four keying modes, a rotary settings menu, and T9-style keyboard replay.
 
-<img src="https://raw.githubusercontent.com/SethHibpshman/Morse-Keyer---EENG163-Final/main/Main%20Picture.jpg" width="65%">
+<img src="https://raw.githubusercontent.com/SethHibpshman/MorseDeck-Terminal/blob/main/assets/showcase.jpg" width="65%">
 
 <p align="center">
   <a href="https://youtu.be/P0Hb8axpHqs">▶️ Watch the Demo</a>
@@ -44,9 +44,7 @@ The device ships with five selectable operating modes, accessible from the setti
 | Mode | Description |
 |---|---|
 | **Sandbox** | Free-form keying with live decoding on the OLED |
-| **Training** | Practice keying with feedback |
 | **Keyboard Replay** | Type text via keypad and play it back as Morse |
-| **Telegraph** | Keyed output transmitted over UART to an STM32 relay display |
 | **Debug** | Live readout of paddle state, encoder pins, keypad input, and memory |
 
 ### Keying Modes
@@ -82,7 +80,7 @@ Hold the rotary encoder button for **2 seconds** to open the settings menu. Shor
 
 | Setting | Options |
 |---|---|
-| Mode | Sandbox, Training, Keyboard Replay, Telegraph, Debug |
+| Mode | Sandbox, Keyboard Replay, Debug |
 | Keying Mode | Iambic A, Iambic B, Ultimatic, Straight Key |
 | WPM | Adjustable (scales all timing thresholds) |
 | Volume | 0-10 |
@@ -112,7 +110,7 @@ Additional behaviors include a typewriter-style boot screen on startup and a bou
 
 Designed in KiCad. All project files are available in [`/PCB Design - KiCad Program/ESP32 Board`](PCB%20Design%20-%20KiCad%20Program/ESP32%20Board).
 
-<img src="https://raw.githubusercontent.com/SethHibpshman/Morse-Keyer---EENG163-Final/main/PCB%20Design%20-%20KiCad%20Program/ESP32%20Board/PCB Layout.png" width="30%">
+<img src="https://raw.githubusercontent.com/SethHibpshman/MorseDeck-Terminal/blob/main/assets/pcb_layout.png" width="30%">
 
 ### Software
 
