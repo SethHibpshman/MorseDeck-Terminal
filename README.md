@@ -5,15 +5,9 @@
 ## Full Feature Demonstration & Walkthrough
 
 <p align="center">
-  <iframe
-    width="560"
-    height="315"
-    src="https://www.youtube.com/embed/P0Hb8axpHqs"
-    title="YouTube video player"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowfullscreen>
-  </iframe>
+  <a href="https://youtu.be/P0Hb8axpHqs">
+    <img src="https://img.youtube.com/vi/P0Hb8axpHqs/0.jpg" width="400" alt="Watch demo">
+  </a>
 </p>
 
 
