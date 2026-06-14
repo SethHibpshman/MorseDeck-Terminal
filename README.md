@@ -8,7 +8,6 @@
   <a href="https://youtu.be/P0Hb8axpHqs">▶️ Watch the Demo</a>
 </p>
 
----
 
 ## Table of Contents
 
@@ -28,7 +27,6 @@
 - [Author](#author)
 - [License](#license)
 
----
 
 ## Overview
 
@@ -36,7 +34,6 @@ MorseDeck Terminal is a fully self-contained Morse code keyer and trainer built 
 
 The project was designed and built from scratch for **EENG 163: Introduction to Embedded Systems** at Eastern Washington University, covering real-time signal generation, hardware input handling, OLED display rendering, and inter-device communication.
 
----
 
 ## Functionality
 
@@ -96,7 +93,6 @@ Hold the rotary encoder button for **2 seconds** to open the settings menu. Shor
 
 Additional behaviors include a typewriter-style boot screen on startup and a bouncing-logo screensaver after 60 seconds of inactivity.
 
----
 
 ## System Design
 
@@ -148,7 +144,6 @@ main.py    # Full application: hardware init, all functions, main loop
 | 5, 6, 15, 17 | Keypad rows |
 | 18, 2, 39, 40 | Keypad columns |
 
----
 
 ## Bill of Materials
 
@@ -171,14 +166,12 @@ main.py    # Full application: hardware init, all functions, main loop
 > - 3D printing assumes university or personal printer access. Outsourced printing would add to the total.
 > - PCB cost assumes overseas fabrication. Each revision spin adds ~$15 per run.
 
----
 
 ## Author
 
 **Seth Hibpshman**  
 Student of Electrical Engineering, Eastern Washington University
 
----
 
 ## License
 
