@@ -2,10 +2,18 @@
 
 > A standalone Morse code keyer and trainer built on the ESP32-S3, featuring real-time decoding, four keying modes, a rotary settings menu, and T9-style keyboard replay.
 
-<img src="https://raw.githubusercontent.com/SethHibpshman/MorseDeck-Terminal/main/assets/showcase.jpg" width="65%">
+## Full Feature Demonstration & Walkthrough
 
 <p align="center">
-  <a href="https://youtu.be/P0Hb8axpHqs">▶️ Watch the Demo</a>
+  <iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/P0Hb8axpHqs"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+  </iframe>
 </p>
 
 
