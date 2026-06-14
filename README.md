@@ -2,7 +2,7 @@
 
 > A standalone Morse code keyer and trainer built on the ESP32-S3, featuring real-time decoding, four keying modes, a rotary settings menu, and T9-style keyboard replay.
 
-<img src="https://raw.githubusercontent.com/SethHibpshman/MorseDeck-Terminal/blob/main/assets/showcase.jpg" width="65%">
+<img src="https://raw.githubusercontent.com/SethHibpshman/MorseDeck-Terminal/main/assets/showcase.jpg" width="65%">
 
 <p align="center">
   <a href="https://youtu.be/P0Hb8axpHqs">▶️ Watch the Demo</a>
@@ -110,7 +110,7 @@ Additional behaviors include a typewriter-style boot screen on startup and a bou
 
 Designed in KiCad. All project files are available in [`/PCB Design - KiCad Program/ESP32 Board`](PCB%20Design%20-%20KiCad%20Program/ESP32%20Board).
 
-<img src="https://raw.githubusercontent.com/SethHibpshman/MorseDeck-Terminal/blob/main/assets/pcb_layout.png" width="30%">
+<img src="https://raw.githubusercontent.com/SethHibpshman/MorseDeck-Terminal/main/assets/pcb_layout.png" width="30%">
 
 ### Software
 
