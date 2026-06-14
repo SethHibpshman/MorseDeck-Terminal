@@ -64,7 +64,7 @@ Four keying styles are supported, covering both traditional and modern paddle te
 
 ### Morse Decoding
 
-Gap detection runs automatically in the background and scales with the live WPM setting:
+Gap detection runs automatically in the background and scales with the live WPM setting found in code:
 
 - After **3x the dit duration** of paddle idle time, a letter space is inserted and the buffered sequence is decoded to the OLED
 - After **7x the dit duration**, the space is upgraded to a word break
@@ -86,7 +86,6 @@ Hold the rotary encoder button for **2 seconds** to open the settings menu. Shor
 |---|---|
 | Mode | Sandbox, Keyboard Replay, Debug |
 | Keying Mode | Iambic A, Iambic B, Ultimatic, Straight Key |
-| WPM | Adjustable (scales all timing thresholds) |
 | Volume | 0-10 |
 | LED | Enabled / Disabled |
 | Decoding | Enabled / Disabled |
@@ -112,7 +111,7 @@ Additional behaviors include a typewriter-style boot screen on startup and a bou
 
 ### PCB Design
 
-Designed in KiCad. All project files are available in [`/PCB Design - KiCad Program/ESP32 Board`](PCB%20Design%20-%20KiCad%20Program/ESP32%20Board).
+Designed in KiCad. All project files are available in [`/hardware/kicad_project_files`](/hardware/kicad_project_files).
 
 <img src="https://raw.githubusercontent.com/SethHibpshman/MorseDeck-Terminal/main/assets/pcb_layout.png" width="30%">
 
@@ -164,9 +163,8 @@ main.py    # Full application: hardware init, all functions, main loop
 
 > **Notes:**
 > - Unit costs reflect bulk purchasing; individual retail prices may be higher.
-> - Some components were salvaged or borrowed; actual out-of-pocket cost may be lower.
 > - 3D printing assumes university or personal printer access. Outsourced printing would add to the total.
-> - PCB cost assumes overseas fabrication. Each revision spin adds ~$15 per run.
+> - PCB cost assumes overseas fabrication.
 
 
 ## Author
