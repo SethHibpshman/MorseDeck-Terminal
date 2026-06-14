@@ -43,7 +43,7 @@ The project was designed and built from scratch for **EENG 163: Introduction to 
 
 ### Operating Modes
 
-The device ships with five selectable operating modes, accessible from the settings menu:
+The device has with three selectable operating modes, accessible from the settings menu:
 
 | Mode | Description |
 |---|---|
