@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://youtu.be/P0Hb8axpHqs">
-    <img src="https://img.youtube.com/vi/P0Hb8axpHqs/0.jpg" width="400" alt="Watch demo">
+    <img src="/assets/morsedeck_terminal_cover_page.png" width="400" alt="Watch demo">
   </a>
 </p>
 
