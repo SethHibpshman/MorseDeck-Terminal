@@ -12,6 +12,8 @@
   <a href="https://youtu.be/P0Hb8axpHqs">▶️ Watch the Full Demo</a>
 </p>
 
+> Full build documentation, hardware reference, and software notes are in the [project wiki](../../wiki). For an account of the technical challenges, design decisions, and lessons learned, see [Design Reflections](../../wiki/5.-Design-Reflections).
+
 ---
 
 ## Table of Contents
@@ -28,7 +30,6 @@
   - [PCB Design](#pcb-design)
   - [Software](#software)
 - [Bill of Materials](#bill-of-materials)
-- [Project Documentation](#project-documentation)
 - [Author](#author)
 - [License](#license)
 
@@ -153,17 +154,6 @@ main.py    # Full application: hardware init, all functions, main loop
 > - Unit costs reflect bulk purchasing; individual retail prices may be higher.
 > - 3D printing assumes university or personal printer access.
 > - PCB cost assumes overseas fabrication.
-
----
-
-## Project Documentation
-
-The project wiki contains a full account of how this was built, including hardware decisions, the development process, and design reflections.
-
-- [Build Guide](../../wiki/2.-Build-Guide) - How I assembled the PCB, wired the components, and got the firmware running
-- [Hardware Reference](../../wiki/3.-Hardware-Reference) - Full pin mapping, component details, and wiring notes
-- [Software Reference](../../wiki/4.-Software-Reference) - Code structure, key logic, and configuration
-- [Design Reflections](../../wiki/5.-Design-Reflections) - What went well, what I would do differently, and known limitations
 
 ---
 
