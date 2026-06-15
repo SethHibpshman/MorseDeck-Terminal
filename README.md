@@ -2,16 +2,15 @@
 
 > A standalone Morse code keyer and trainer built on the ESP32-S3, featuring real-time decoding, four keying modes, a rotary settings menu, and T9-style keyboard replay.
 
-## Full Feature Demonstration & Walkthrough
-
 <p align="center">
   <a href="https://youtu.be/P0Hb8axpHqs">
     <img src="/assets/morsedeck_terminal_cover_page.png" width="400" alt="Watch demo">
   </a>
 </p>
 
-<p align="center"> <a href="https://youtu.be/P0Hb8axpHqs">▶️ Watch the Demo</a> </p>
-
+<p align="center">
+  <a href="https://youtu.be/P0Hb8axpHqs">▶️ Watch the Full Demo</a>
+</p>
 
 ## Table of Contents
 
@@ -26,11 +25,10 @@
   - [Hardware](#hardware)
   - [PCB Design](#pcb-design)
   - [Software](#software)
-  - [Pin Mapping](#pin-mapping)
 - [Bill of Materials](#bill-of-materials)
+- [Replicate This Project](#replicate-this-project)
 - [Author](#author)
 - [License](#license)
-
 
 ## Overview
 
@@ -38,12 +36,11 @@ MorseDeck Terminal is a fully self-contained Morse code keyer and trainer built 
 
 The project was designed and built from scratch for **EENG 163: Introduction to Embedded Systems** at Eastern Washington University, covering real-time signal generation, hardware input handling, OLED display rendering, and inter-device communication.
 
-
 ## Functionality
 
 ### Operating Modes
 
-The device has with three selectable operating modes, accessible from the settings menu:
+The device has three selectable operating modes, accessible from the settings menu:
 
 | Mode | Description |
 |---|---|
@@ -64,7 +61,7 @@ Four keying styles are supported, covering both traditional and modern paddle te
 
 ### Morse Decoding
 
-Gap detection runs automatically in the background and scales with the live WPM setting found in code:
+Gap detection runs automatically in the background and scales with the live WPM setting:
 
 - After **3x the dit duration** of paddle idle time, a letter space is inserted and the buffered sequence is decoded to the OLED
 - After **7x the dit duration**, the space is upgraded to a word break
@@ -94,7 +91,6 @@ Hold the rotary encoder button for **2 seconds** to open the settings menu. Shor
 
 Additional behaviors include a typewriter-style boot screen on startup and a bouncing-logo screensaver after 60 seconds of inactivity.
 
-
 ## System Design
 
 ### Hardware
@@ -109,6 +105,8 @@ Additional behaviors include a typewriter-style boot screen on startup and a bou
 | Buzzer | Piezo PWM buzzer |
 | LED | Single external indicator LED |
 
+> Full pin mapping and wiring details are in the [Hardware Reference](../../wiki/Hardware-Reference) wiki page.
+
 ### PCB Design
 
 Designed in KiCad. All project files are available in [`/hardware/kicad_project_files`](/hardware/kicad_project_files).
@@ -119,32 +117,13 @@ Designed in KiCad. All project files are available in [`/hardware/kicad_project_
 
 Written entirely in **MicroPython** as a single-file application.
 
-**Dependencies:**
-- `ssd1306` - OLED driver
-- `gfx` - OLED graphics primitives
-- `keypad` - 4x4 matrix keypad driver
-- `urandom` - screensaver randomization
+**Dependencies:** `ssd1306`, `gfx`, `keypad`, `urandom`
 
 ```
 main.py    # Full application: hardware init, all functions, main loop
 ```
 
-### Pin Mapping
-
-| Pin | Function |
-|---|---|
-| 7 | Dit paddle |
-| 16 | Dah paddle |
-| 38 | Buzzer (PWM) |
-| 1 | External LED |
-| 4 | Rotary CLK |
-| 47 | Rotary DT |
-| 45 | Rotary SW |
-| 46 | OLED SCL |
-| 8 | OLED SDA |
-| 5, 6, 15, 17 | Keypad rows |
-| 18, 2, 39, 40 | Keypad columns |
-
+> Dependency setup, flashing instructions, and code structure notes are in the [Software Reference](../../wiki/Software-Reference) wiki page.
 
 ## Bill of Materials
 
@@ -161,17 +140,23 @@ main.py    # Full application: hardware init, all functions, main loop
 | 3D-printed enclosure | 1 | - | $0.00 |
 | **Grand Total** | | | **$19.50** |
 
-> **Notes:**
 > - Unit costs reflect bulk purchasing; individual retail prices may be higher.
-> - 3D printing assumes university or personal printer access. Outsourced printing would add to the total.
+> - 3D printing assumes university or personal printer access.
 > - PCB cost assumes overseas fabrication.
 
+## Replicate This Project
+
+Full replication documentation lives in the project wiki:
+
+- [Build Guide](../../wiki/Build-Guide) - Assembly, wiring, and flashing firmware step by step
+- [Hardware Reference](../../wiki/Hardware-Reference) - Pin mapping, component specs, and wiring notes
+- [Software Reference](../../wiki/Software-Reference) - Code structure, dependencies, and configuration
+- [Replication Notes](../../wiki/Replication-Notes) - Lessons learned, known issues, and what to watch out for
 
 ## Author
 
 **Seth Hibpshman**  
 Student of Electrical Engineering, Eastern Washington University
-
 
 ## License
 
