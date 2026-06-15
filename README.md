@@ -14,8 +14,6 @@
 
 > Full build documentation, hardware reference, and software notes are in the [project wiki](../../wiki). For an account of the technical challenges, design decisions, and lessons learned, see [Design Reflections](../../wiki/5.-Design-Reflections).
 
----
-
 ## Table of Contents
 
 - [Overview](#overview)
@@ -33,15 +31,11 @@
 - [Author](#author)
 - [License](#license)
 
----
-
 ## Overview
 
 MorseDeck Terminal is a fully self-contained Morse code keyer and trainer built on the ESP32-S3 and programmed in MicroPython. The device supports professional-grade iambic keying with automatic real-time decoding, a rotary encoder settings interface, multi-tap keyboard input, and serial output to an external display, all running on a custom PCB in a 3D-printed enclosure.
 
 The project was designed and built from scratch for **EENG 163: Introduction to Embedded Systems** at Eastern Washington University, covering real-time signal generation, hardware input handling, OLED display rendering, and inter-device communication.
-
----
 
 ## Functionality
 
@@ -98,8 +92,6 @@ Hold the rotary encoder button for **2 seconds** to open the settings menu. Shor
 
 Additional behaviors include a typewriter-style boot screen on startup and a bouncing-logo screensaver after 60 seconds of inactivity.
 
----
-
 ## System Design
 
 ### Hardware
@@ -134,8 +126,6 @@ main.py    # Full application: hardware init, all functions, main loop
 
 > Code structure, dependencies, and configuration details are in the [Software Reference](../../wiki/4.-Software-Reference) wiki page.
 
----
-
 ## Bill of Materials
 
 | Item | Qty | Unit | Total |
@@ -155,14 +145,13 @@ main.py    # Full application: hardware init, all functions, main loop
 > - 3D printing assumes university or personal printer access.
 > - PCB cost assumes overseas fabrication.
 
----
-
 ## Author
 
 **Seth Hibpshman**  
 Student of Electrical Engineering, Eastern Washington University
 
----
+## AI Disclosure
+_AI (LLM) tools were used for quality assurance review of the firmware and in the drafting and editing of this README and wiki documentation; all code was written by hand._
 
 ## License
 
