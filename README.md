@@ -113,7 +113,7 @@ Additional behaviors include a typewriter-style boot screen on startup and a bou
 | Buzzer | Piezo PWM buzzer |
 | LED | Single external indicator LED |
 
-> Full pin mapping and wiring notes are in the [Hardware Reference](../../wiki/Hardware-Reference) wiki page.
+> Full pin mapping and wiring notes are in the [Hardware Reference](../../wiki/3.-Hardware-Reference) wiki page.
 
 ### PCB Design
 
@@ -131,7 +131,7 @@ Written entirely in **MicroPython** as a single-file application.
 main.py    # Full application: hardware init, all functions, main loop
 ```
 
-> Code structure, dependencies, and configuration details are in the [Software Reference](../../wiki/Software-Reference) wiki page.
+> Code structure, dependencies, and configuration details are in the [Software Reference](../../wiki/4.-Software-Reference) wiki page.
 
 ---
 
@@ -160,10 +160,10 @@ main.py    # Full application: hardware init, all functions, main loop
 
 The project wiki contains a full account of how this was built, including hardware decisions, the development process, and design reflections.
 
-- [Build Guide](../../wiki/Build-Guide) - How I assembled the PCB, wired the components, and got the firmware running
-- [Hardware Reference](../../wiki/Hardware-Reference) - Full pin mapping, component details, and wiring notes
-- [Software Reference](../../wiki/Software-Reference) - Code structure, key logic, and configuration
-- [Design Reflections](../../wiki/Design-Reflections) - What went well, what I would do differently, and known limitations
+- [Build Guide](../../wiki/2.-Build-Guide) - How I assembled the PCB, wired the components, and got the firmware running
+- [Hardware Reference](../../wiki/3.-Hardware-Reference) - Full pin mapping, component details, and wiring notes
+- [Software Reference](../../wiki/4.-Software-Reference) - Code structure, key logic, and configuration
+- [Design Reflections](../../wiki/5.-Design-Reflections) - What went well, what I would do differently, and known limitations
 
 ---
 
