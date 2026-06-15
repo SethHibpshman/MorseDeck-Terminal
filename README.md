@@ -12,6 +12,8 @@
   <a href="https://youtu.be/P0Hb8axpHqs">▶️ Watch the Full Demo</a>
 </p>
 
+---
+
 ## Table of Contents
 
 - [Overview](#overview)
@@ -26,15 +28,19 @@
   - [PCB Design](#pcb-design)
   - [Software](#software)
 - [Bill of Materials](#bill-of-materials)
-- [Replicate This Project](#replicate-this-project)
+- [Project Documentation](#project-documentation)
 - [Author](#author)
 - [License](#license)
+
+---
 
 ## Overview
 
 MorseDeck Terminal is a fully self-contained Morse code keyer and trainer built on the ESP32-S3 and programmed in MicroPython. The device supports professional-grade iambic keying with automatic real-time decoding, a rotary encoder settings interface, multi-tap keyboard input, and serial output to an external display, all running on a custom PCB in a 3D-printed enclosure.
 
 The project was designed and built from scratch for **EENG 163: Introduction to Embedded Systems** at Eastern Washington University, covering real-time signal generation, hardware input handling, OLED display rendering, and inter-device communication.
+
+---
 
 ## Functionality
 
@@ -91,6 +97,8 @@ Hold the rotary encoder button for **2 seconds** to open the settings menu. Shor
 
 Additional behaviors include a typewriter-style boot screen on startup and a bouncing-logo screensaver after 60 seconds of inactivity.
 
+---
+
 ## System Design
 
 ### Hardware
@@ -105,11 +113,11 @@ Additional behaviors include a typewriter-style boot screen on startup and a bou
 | Buzzer | Piezo PWM buzzer |
 | LED | Single external indicator LED |
 
-> Full pin mapping and wiring details are in the [Hardware Reference](../../wiki/Hardware-Reference) wiki page.
+> Full pin mapping and wiring notes are in the [Hardware Reference](../../wiki/Hardware-Reference) wiki page.
 
 ### PCB Design
 
-Designed in KiCad. All project files are available in [`/hardware/kicad_project_files`](/hardware/kicad_project_files).
+Designed in KiCad. All project files are in [`/hardware/kicad_project_files`](/hardware/kicad_project_files).
 
 <img src="https://raw.githubusercontent.com/SethHibpshman/MorseDeck-Terminal/main/assets/pcb_layout.png" width="30%">
 
@@ -123,7 +131,9 @@ Written entirely in **MicroPython** as a single-file application.
 main.py    # Full application: hardware init, all functions, main loop
 ```
 
-> Dependency setup, flashing instructions, and code structure notes are in the [Software Reference](../../wiki/Software-Reference) wiki page.
+> Code structure, dependencies, and configuration details are in the [Software Reference](../../wiki/Software-Reference) wiki page.
+
+---
 
 ## Bill of Materials
 
@@ -144,19 +154,25 @@ main.py    # Full application: hardware init, all functions, main loop
 > - 3D printing assumes university or personal printer access.
 > - PCB cost assumes overseas fabrication.
 
-## Replicate This Project
+---
 
-Full replication documentation lives in the project wiki:
+## Project Documentation
 
-- [Build Guide](../../wiki/Build-Guide) - Assembly, wiring, and flashing firmware step by step
-- [Hardware Reference](../../wiki/Hardware-Reference) - Pin mapping, component specs, and wiring notes
-- [Software Reference](../../wiki/Software-Reference) - Code structure, dependencies, and configuration
-- [Replication Notes](../../wiki/Replication-Notes) - Lessons learned, known issues, and what to watch out for
+The project wiki contains a full account of how this was built, including hardware decisions, the development process, and design reflections.
+
+- [Build Guide](../../wiki/Build-Guide) - How I assembled the PCB, wired the components, and got the firmware running
+- [Hardware Reference](../../wiki/Hardware-Reference) - Full pin mapping, component details, and wiring notes
+- [Software Reference](../../wiki/Software-Reference) - Code structure, key logic, and configuration
+- [Design Reflections](../../wiki/Design-Reflections) - What went well, what I would do differently, and known limitations
+
+---
 
 ## Author
 
 **Seth Hibpshman**  
 Student of Electrical Engineering, Eastern Washington University
+
+---
 
 ## License
 
