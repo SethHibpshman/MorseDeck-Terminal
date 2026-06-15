@@ -29,6 +29,7 @@
   - [Software](#software)
 - [Bill of Materials](#bill-of-materials)
 - [Author](#author)
+- [AI Disclosure](#ai-disclosure)
 - [License](#license)
 
 ## Overview
